@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+button {
+    font-family: 'Arial Black';
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 36px;
+    color: #2F2F2F;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Arial';
+    line-height: 24px;
+    font-weight: 400;
+    color: #2F2F2F;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+.header__h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-cards__content {
+    background-color: #fff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0px 0px 45px -4px rgba(0, 0, 0, 0.18);
+}
+
+.product-cards__content-relative {
+    position: relative;
+}
+
+.product-cards__img {
+    display: block;
+    border-radius: 12px 12px 0 0;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.product-cards__tag {
+    display: flex;
+    position: absolute;
+    left: 16.73px;
+    top: 16.33px;
+    gap: 16.73px;
+}
+
+.product-cards__p_tag {
+    background: #FDCFF3;
+    padding: 0 16.73px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.product-cards__p_tag:nth-child(2) {
+    background: #FFCF56;
+}
+
+.product-cards__text {
+    padding: 24px;
+}
+
+.product-cards__p {
+    margin-top: 16px;
+}
+
+.product-cards__p_odd {
+    margin-bottom: 72px;
+}
+
+.product-cards__p_even {
+    margin-bottom: 24px;
+}
+
+.product-cards__button {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 25.38px;
+    text-align: center;
+    width: 100%;
+    max-width: 332px;
+    height: 48px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product-cards__button_active {
+    color: #42940F;
+    background-color: #fff;
+    border: 2px solid #42940F;
+}
+
+.product-cards__button_active:hover {
+    background-color: #42940F;
+    color: #fff;
+}
+
+.product-cards__button_active:active {
+    background-color: #1F5200;
+    border: 2px solid #1F5200
+}
+
+.product-cards__button_disabled {
+    background-color: #4E4E4E;
+    border: 2px solid #4E4E4E;
+    color: #fff;
+    cursor: default;
+}
